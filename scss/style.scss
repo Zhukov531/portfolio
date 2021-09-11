@@ -31,6 +31,7 @@ body{
     background-size: cover;
     height: 100%;
     background-position: center;
+    padding: 0 30px;
 }
 .header{
     display: flex;
@@ -86,7 +87,77 @@ body{
     text-align: center;
     text-transform: uppercase;
 }
-// ----------------- 2 Блок чем я занимаюсь
+
+
+@media screen and (max-width:1000px) {
+    .section-1-text-3, .section-1-text-1 span{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .section-1-text-2{
+        font-size: 70px;
+    }
+}   
+
+
+@media screen and (max-width: 565px) {
+    .section-1-text-3, .section-1-text-1 span{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .section-1-text-2{
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .section-1-text-3, .section-1-text-1 span{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 30px;
+    }
+    .section-1-text-2{
+        font-size: 45px;
+        line-height: 48px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .section-1-text-3, .section-1-text-1 span{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 30px;
+    }
+    .section-1-text-2{
+        font-size: 38px;
+        line-height: 42px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .section-1-text-3, .section-1-text-1 span{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 30px;
+    }
+    .section-1-text-2{
+        font-size: 35px;
+        line-height: 42px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .header span{
+        font-size: 20px;
+    }
+    .section-1-text-3, .section-1-text-1 span{
+        font-size: 12px;
+        line-height: 20px;
+        padding: 0 30px;
+    }
+    .section-1-text-2{
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+// -------------------------------------------------------------- 2 Блок чем я занимаюсь ---------------------------------------------
 
 .section-2{
     background: linear-gradient(180deg, #040404, #00e7bd);
@@ -97,7 +168,7 @@ body{
 .section-2-content {
     max-width: 900px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,23 +186,72 @@ body{
 }
 .section-2-block {
     max-width: 250px;
+    margin: 0 25px;
 }
 .section-2-block-content {
     font-family: Mulish;
-font-size: 17px;
-font-style: normal;
-font-weight: 400;
-line-height: 23px;
-letter-spacing: 0em;
-text-align: center;
-
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
 }
 .section-2-img{
     width: 25px;
     margin-bottom: 30px;
 }
 
-// --------- Section-3
+
+
+@media screen and (max-width:800px) {
+    .section-2-h2{
+        font-size: 40px;
+    }
+    .section-2-blocks{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .section-2-block{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:460px) {
+    .section-2-h2{
+        font-size: 28px;
+
+    }
+    .section-2-blocks{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 70px;
+    }
+
+    .section-2-block{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:380px) {
+    .section-2-content{
+        padding: 50px 30px;
+    }
+}
+@media screen and (max-width:375px) {
+    .section-2-h2{
+        font-size: 23px;
+
+    }
+    .section-2-blocks{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 70px;
+    }
+
+    .section-2-block{
+        margin-bottom: 50px;
+    }
+}
+// --------------------------------------------------------------- Section-3---------------------------------------------
 
 .section-3 {
     background: linear-gradient(0deg, #040404, #00e7bd);
@@ -153,18 +273,17 @@ text-align: center;
     font-size: 45px;
 }
 .section-3-blocks {
-    margin-top: 100px;
+    margin-top: 50px;
     width: 100%;
 }
 .section-3-block1 {
     display: flex;
     margin-top: 50px;
-
     justify-content: center;
 }
 .section-3-block-img{
     img{
-        width: 300px;
+        max-width: 300px;
     }
 }
 .section-3-block-text {
@@ -196,7 +315,10 @@ text-align: center;
         font-size: 12px;
     }
 }
-//------
+
+
+
+
 .section-3-block2 {
     display: flex;
     margin-top: 50px;
@@ -220,7 +342,6 @@ text-align: center;
         font-size: 12px;
     }
 }
-//----- Hover
 
 .sec-3-block-button button:hover{
 
@@ -234,7 +355,92 @@ text-align: center;
     box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.596); /* Параметры тени */
     
 }
-// ------------- Footer
+@media screen and (max-width:800px) {
+    .ection-3-title{
+        font-size: 40px;
+    }
+    .section-3-block1, .section-3-block2{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width:650px) {
+    .ection-3-title{
+        font-size: 40px;
+    }
+    .section-3-block1, .section-3-block2{
+        padding: 0 30px;
+        flex-wrap: wrap;
+    }
+    .section-3-block-img img{
+        max-width: 350px;
+    }
+    .section-3-block-text{
+        max-width: 350px;
+        margin: 30px 0 0 0;
+    }
+}
+@media screen and (max-width:650px) {
+    .section-3-title{
+        font-size: 40px;
+    }
+    .section-3-block1, .section-3-block2{
+        padding: 0 30px;
+        flex-wrap: wrap;
+    }
+    .section-3-block-img img{
+        max-width: 350px;
+    }
+    .section-3-block-text2{
+        max-width: 350px;
+        margin: 30px 0 30px 0;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .section-3-title{
+        font-size: 24px;
+    }
+    .section-3-block1, .section-3-block2{
+        padding: 0 30px;
+        flex-wrap: wrap;
+    }
+    .section-3-block-img img{
+        max-width: 300px;
+    }
+    .section-3-block-text{
+        max-width: 300px;
+        margin: 30px 0 0 0;
+    }
+    .section-3-block-text2{
+        max-width: 300px;
+        margin: 30px 0 30px 0;
+    }
+}
+@media screen and (max-width:380px) {
+    .section-3-content{
+        padding: 50px 30px;
+    }
+}
+@media screen and (max-width:280px) {
+    .section-3-title{
+        font-size: 20px;
+    }
+    .section-3-block-img2 img,.section-3-block-img img{
+        max-width: 240px;
+    }
+    .section-3-block-text{
+        max-width: 240px;
+        padding: 0;
+        background-color: black;
+    }
+    .sec-3-block-title{
+        font-size: 17px;
+    }
+    .sec-3-block-text{
+        font-size: 13px;
+    }
+}
+// ------------------------- Footer --------------------
 
 .footer {
     background: #000201;
@@ -242,15 +448,13 @@ text-align: center;
 .footer-content {
     max-width: 900px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 .footer-links {
     display: flex;
-
     width: 100%;
     justify-content: space-between;
 }
@@ -259,10 +463,8 @@ text-align: center;
         width: 40px;
         margin: 10px;
     }
-
     display: flex;
     align-items: center;
-    
 }
 
 .links2 {
@@ -275,7 +477,6 @@ text-align: center;
 .links3 {
     img{
         width: 40px;
-
         margin: 10px;
     }
 
@@ -290,4 +491,23 @@ text-align: center;
     font-weight: 800px;
     color: white;
 } 
-//Ya ne ponimayou
+
+@media screen and (max-width: 650px) {
+    .links1 img, .links3 img{
+        width: 30px;
+        margin: 8px;
+    }
+    .footer-content{
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .links1 img, .links3 img{
+        width: 25px;
+        margin: 6px;
+    }
+    .footer-content{
+        padding: 50px 20px;
+    }
+}
