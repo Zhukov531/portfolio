@@ -220,9 +220,10 @@ body{
     }
 }
 @media screen and (max-width:460px) {
+    
     .section-2-h2{
         font-size: 28px;
-
+        
     }
     .section-2-blocks{
         flex-wrap: wrap;
@@ -232,6 +233,18 @@ body{
 
     .section-2-block{
         margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:415px) {
+    .section-2{
+        margin: 0;
+    }
+    .section-2-content{
+        padding: 50px 0 0 0 ;
+        margin: 0;
+    }
+    .section-2-block{
+        padding-bottom: 0px;
     }
 }
 @media screen and (max-width:380px) {
@@ -321,10 +334,6 @@ body{
         font-size: 12px;
     }
 }
-
-
-
-
 .section-3-block2 {
     display: flex;
     margin-top: 50px;
@@ -403,6 +412,9 @@ body{
 }
 
 @media screen and (max-width:460px) {
+    .section-3-content{
+        padding: 50px 0;
+    }
     .section-3-title{
         font-size: 24px;
     }
@@ -453,6 +465,7 @@ body{
     .section-3-blocks{
         margin-top: 10px;
     }
+
 }
 // ------------------------- Footer --------------------
 
