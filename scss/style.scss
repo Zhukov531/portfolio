@@ -428,10 +428,10 @@ body{
     .section-3-block-img2 img,.section-3-block-img img{
         max-width: 240px;
     }
-    .section-3-block-text{
-        max-width: 240px;
+    .section-3-block-text, .section-3-block-text2{
+        min-width: 240px;
         padding: 0;
-        background-color: black;
+
     }
     .sec-3-block-title{
         font-size: 17px;
@@ -506,6 +506,18 @@ body{
     .links1 img, .links3 img{
         width: 25px;
         margin: 6px;
+    }
+    .footer-content{
+        padding: 50px 20px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .links1 img, .links3 img{
+        width: 20px;
+        margin: 5px;
+    }
+    .links2 img{
+        width: 35px;
     }
     .footer-content{
         padding: 50px 20px;
