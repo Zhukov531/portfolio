@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -113,9 +114,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   max-height: 80px;
-  padding: 10px;
-  font-size: 30px;
-  font-family: "Exo semi";
+  padding: 15px;
+  font-size: 20px;
+  font-family: 'Secular One', sans-serif;
   text-transform: uppercase;
 }
 
@@ -155,7 +156,7 @@ body {
 }
 
 .section-1-text-2 {
-  font-family: "Exo extra";
+  font-family: 'Secular One', sans-serif;
   font-size: 90px;
   font-style: normal;
   font-weight: 900;
@@ -228,8 +229,8 @@ body {
     padding: 0 30px;
   }
   .section-1-text-2 {
-    font-size: 35px;
-    line-height: 42px;
+    font-size: 38px;
+    line-height: 40px;
   }
 }
 
@@ -358,7 +359,10 @@ body {
     margin-top: 70px;
   }
   .section-2-block {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+  }
+  .section-2-content {
+    padding: 50px;
   }
 }
 
@@ -561,6 +565,9 @@ body {
   .section-3-content {
     padding: 50px 30px;
   }
+  .section-3-block-text, .section-3-block-text2 {
+    min-width: 300px;
+  }
 }
 
 @media screen and (max-width: 280px) {
@@ -579,6 +586,12 @@ body {
   }
   .sec-3-block-text {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section-3-blocks {
+    margin-top: 10px;
   }
 }
 
@@ -657,7 +670,7 @@ body {
   font-size: 16px;
   text-align: center;
   margin-top: 60px;
-  font-family: mulish;
+  font-family: 'Secular One', sans-serif;
   font-weight: 800px;
   color: white;
 }
