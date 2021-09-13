@@ -200,11 +200,17 @@ body{
     letter-spacing: 0em;
     text-align: center;
 }
+
 .section-2-img{
     width: 25px;
     margin-bottom: 30px;
+    transition: 0.5s;
 }
-
+.section-2-img:hover{
+    width: 30px;
+    margin-bottom: 30px;
+    transition: 0.4s;
+}
 
 
 @media screen and (max-width:800px) {
@@ -303,6 +309,15 @@ body{
 .section-3-block-img{
     img{
         max-width: 300px;
+        box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.932);
+        transition: 0.5s;
+    }
+}
+.section-3-block-img{
+    img:hover{
+        max-width: 320px;
+        box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.932);
+        transition: 0.5s;
     }
 }
 .section-3-block-text {
@@ -332,6 +347,20 @@ body{
         box-shadow: white 1 1 1;
         font-family: mulish;
         font-size: 12px;
+    }
+}
+.sec-3-block-button, .sec-3-block-button2 {
+    margin-top: 15px;
+    button:hover{
+        width: 155px;
+        height: 45px;
+        border-radius: 50px;
+        background-color: #001D18;
+        color: white;
+        box-shadow: white 1 1 1;
+        font-family: mulish;
+        font-size: 12px;
+        transition: 0.3s;
     }
 }
 .section-3-block2 {
