@@ -101,7 +101,7 @@ body {
 }
 
 .section-content {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.527)), url(../img/UVnCB.jpg);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.527)), url(../img/pexels-photo-257894.jpeg);
   background-size: cover;
   height: 100%;
   background-position: center;
@@ -252,10 +252,9 @@ body {
 }
 
 .section-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#040404), to(#00e7bd));
-  background: linear-gradient(180deg, #040404, #00e7bd);
+  background: white;
   max-height: 750px;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -391,10 +390,8 @@ body {
 }
 
 .section-3 {
-  background: -webkit-gradient(linear, left bottom, left top, from(#040404), to(#00e7bd));
-  background: linear-gradient(0deg, #040404, #00e7bd);
-  color: white;
-  background-color: saddlebrown;
+  background: white;
+  color: black;
 }
 
 .section-3-content {
@@ -440,6 +437,8 @@ body {
           box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.932);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 .section-3-block-img img:hover {
@@ -476,12 +475,15 @@ body {
   width: 150px;
   height: 40px;
   border-radius: 50px;
-  background-color: #001D18;
-  color: white;
+  background-color: #ffffff;
+  color: black;
   -webkit-box-shadow: white 1 1 1;
           box-shadow: white 1 1 1;
   font-family: mulish;
   font-size: 12px;
+  border: 1px solid black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .sec-3-block-button, .sec-3-block-button2 {
@@ -491,15 +493,8 @@ body {
 .sec-3-block-button button:hover, .sec-3-block-button2 button:hover {
   width: 155px;
   height: 45px;
-  border-radius: 50px;
-  background-color: #001D18;
-  color: white;
-  -webkit-box-shadow: white 1 1 1;
-          box-shadow: white 1 1 1;
-  font-family: mulish;
-  font-size: 12px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.3;
+  transition: 0.3;
 }
 
 .section-3-block2 {
@@ -526,30 +521,33 @@ body {
   width: 150px;
   height: 40px;
   border-radius: 50px;
-  background-color: #001d18;
-  color: white;
+  background-color: #ffffff;
+  color: black;
   -webkit-box-shadow: white 1 1 1;
           box-shadow: white 1 1 1;
   font-family: mulish;
   font-size: 12px;
+  border: 1px solid black;
+  -webkit-transition: 0.3;
+  transition: 0.3;
 }
 
 .sec-3-block-button button:hover {
-  background-color: #001310;
+  background-color: #ffffff;
   -webkit-box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.596);
           box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.596);
   /* Параметры тени */
 }
 
 .sec-3-block-button2 button:hover {
-  background-color: #00493C;
+  background-color: #ffffff;
   -webkit-box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.596);
           box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.596);
   /* Параметры тени */
 }
 
 @media screen and (max-width: 800px) {
-  .ection-3-title {
+  .section-3-title {
     font-size: 40px;
   }
   .section-3-block1, .section-3-block2 {
