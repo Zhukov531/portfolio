@@ -21,7 +21,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
 
 body{
-    // background-color: black;
+    margin: 0;
+    padding: 0;
 }
 // --------------------------- Header ----------------------
 
@@ -279,223 +280,87 @@ body{
 }
 // --------------------------------------------------------------- Section-3---------------------------------------------
 
-.section-3 {
-    background: white;
-    color: black;
-}
 .section-3-content {
-
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 100px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
 }
-.section-3-title {
+.section-3-title-h1 {
+    text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-size: 45px;
 }
-.section-3-blocks {
-    margin-top: 50px;
-    width: 100%;
-}
-.section-3-block1 {
+.section-3-blocks-1{
+    padding: 50px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.section-3-block-solo {
     margin-top: 50px;
-    justify-content: center;
+    max-width: 500px;
+    padding: 15px;
 }
-.section-3-block-img{
-    img{
-        max-width: 300px;
-        box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.932);
-        transition: 0.5s;
-        border: 2px solid rgb(0, 0, 0);
-        border-radius: 10px;
-    }
+.section-3-img {
+    max-width: 400px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: grey 5px 5px 8px;
+    transition: 0.3s;
 }
-.section-3-block-img{
-    img:hover{
-        max-width: 320px;
-        box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.932);
-        transition: 0.5s;
-    }
+.section-3-img:hover{
+    box-shadow: grey 20px 20px 10px;
 }
-.section-3-block-text {
-    max-width: 350px;
-    margin-left: 30px;
-
-}
-.sec-3-block-title {
+.block-solo-h2 {
+    margin-top: 20px;
     font-size: 25px;
     font-family: 'Arimo', sans-serif;
     font-weight: 700;
 }
-.sec-3-block-text {
+.block-solo-p {
     margin-top: 20px;
     line-height: 18px;
     font-family: 'Arimo', sans-serif;
     font-weight: 500;
 }
-.sec-3-block-button {
+.block-solo-btn {
+    padding: 13px 50px;
+    border-radius: 10px;
+    border: 1px gray solid;
+    font-size: 13px;
+    background: transparent;
+    transition: 0.2s;
     margin-top: 15px;
-    button{
-        width: 150px;
-        height: 40px;
-        border-radius: 50px;
-        background-color: #ffffff;
-        color: rgb(0, 0, 0);
-        box-shadow: rgb(255, 255, 255) 1 1 1;
-        font-family: mulish;
-        font-size: 12px;
-        border: 1px solid black;
-        transition: 0.3s;
-    }
 }
-.sec-3-block-button, .sec-3-block-button2 {
-    margin-top: 15px;
-    button:hover{
-        width: 155px;
-        height: 45px;
-        transition: 0.3;
-    }
-}
-.section-3-block2 {
-    display: flex;
-    margin-top: 50px;
-    justify-content: center;
-    
-}
-.section-3-block-text2{
-    max-width: 350px;
-    margin-right: 30px;
-    text-align: right;
-}
-.sec-3-block-button2 {
-    margin-top: 15px;
-    button{
-        width: 150px;
-        height: 40px;
-        border-radius: 50px;
-        background-color: #ffffff;
-        color: rgb(0, 0, 0);
-        box-shadow: white 1 1 1;
-        font-family: mulish;
-        font-size: 12px;
-        border: 1px solid black;
-        transition: 0.3s;
-    }
+.block-solo-btn:hover{
+    background: #202020;
+    color: white;
+    box-shadow: grey 8px 5px 5px;
 }
 
-.sec-3-block-button button:hover{
 
-    background-color: #ffffff;
-    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.596); /* Параметры тени */
-    
-}
-.sec-3-block-button2 button:hover{
-
-    background-color: #ffffff;
-    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.596); /* Параметры тени */
-}
-@media screen and (max-width:800px) {
-    .section-3-title{
-        font-size: 40px;
+@media screen and (max-width: 1024px) {
+    .section-3-blocks-1{
+        padding: 0;
     }
-    .section-3-block1, .section-3-block2{
-        padding: 0 30px;
+    .section-3-block-solo{
+        width: 240px;
+        padding: 0;
+        margin: 50px;
     }
-}
-@media screen and (max-width:650px) {
-    .ection-3-title{
-        font-size: 40px;
+    .section-3-img{
+        width: 250px;
     }
-    .section-3-block1, .section-3-block2{
-        padding: 0 30px;
-        flex-wrap: wrap;
+    .section-3-title-h1{
+        font-size: 25px;
     }
-    .section-3-block-img img{
-        max-width: 350px;
-    }
-    .section-3-block-text{
-        max-width: 350px;
-        margin: 30px 0 0 0;
-    }
-}
-@media screen and (max-width:650px) {
-    .section-3-title{
-        font-size: 40px;
-    }
-    .section-3-block1, .section-3-block2{
-        padding: 0 30px;
-        flex-wrap: wrap;
-    }
-    .section-3-block-img img{
-        max-width: 350px;
-    }
-    .section-3-block-text2{
-        max-width: 350px;
-        margin: 30px 0 30px 0;
-    }
-}
-
-@media screen and (max-width:460px) {
-    .section-3-content{
-        padding: 50px 0;
-    }
-    .section-3-title{
-        font-size: 24px;
-    }
-    .section-3-block1, .section-3-block2{
-        padding: 0 30px;
-        flex-wrap: wrap;
-    }
-    .section-3-block-img img{
-        max-width: 300px;
-    }
-    .section-3-block-text{
-        max-width: 300px;
-        margin: 30px 0 0 0;
-    }
-    .section-3-block-text2{
-        max-width: 300px;
-        margin: 30px 0 30px 0;
-    }
-}
-@media screen and (max-width:380px) {
-    .section-3-content{
-        padding: 50px 30px;
-    }
-    .section-3-block-text, .section-3-block-text2{
-        min-width: 300px;
-    }
-}
-@media screen and (max-width:280px) {
-    .section-3-title{
+    .block-solo-h2{
         font-size: 20px;
     }
-    .section-3-block-img2 img,.section-3-block-img img{
-        max-width: 240px;
-    }
-    .section-3-block-text, .section-3-block-text2{
-        min-width: 240px;
-        padding: 0;
-
-    }
-    .sec-3-block-title{
-        font-size: 17px;
-    }
-    .sec-3-block-text{
-        font-size: 13px;
+    .block-solo-p{
+        font-size: 15px;
     }
 }
-@media screen and (max-width:375px) {
-    .section-3-blocks{
-        margin-top: 10px;
-    }
 
-}
 // ------------------------- Footer --------------------
 
 .footer {
