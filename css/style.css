@@ -8,7 +8,11 @@
   margin: 0;
   border: 0;
 }
-
+*::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+    /* background-color: #000000; */
+}
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -102,7 +106,7 @@ body {
 }
 
 .section-content {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.527)), url(../img/pexels-photo-257894.jpeg);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.527)), url(../img/head2.jpeg);
   background-size: cover;
   height: 100%;
   background-position: center;
@@ -392,6 +396,8 @@ body {
 
 .section-3-content {
   width: 100%;
+  background-color: #151515;
+  color: white;
 }
 
 .section-3-title-h1 {
@@ -399,6 +405,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 45px;
+  padding-top: 60px;
 }
 
 .section-3-blocks-1 {
@@ -420,17 +427,18 @@ body {
 
 .section-3-img {
   max-width: 400px;
-  border: 2px solid grey;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
-  -webkit-box-shadow: grey 5px 5px 8px;
-          box-shadow: grey 5px 5px 8px;
+  -webkit-box-shadow: rgb(255, 255, 255) 5px 5px 8px;
+          box-shadow: rgb(255, 255, 255) 5px 5px 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .section-3-img:hover {
-  -webkit-box-shadow: grey 20px 20px 10px;
-          box-shadow: grey 20px 20px 10px;
+  -webkit-box-shadow: rgb(255, 255, 255) 20px 20px 10px;
+          box-shadow: rgb(255, 255, 255) 20px 20px 10px;
+  max-width: 425px;
 }
 
 .block-solo-h2 {
@@ -450,19 +458,22 @@ body {
 .block-solo-btn {
   padding: 13px 50px;
   border-radius: 10px;
-  border: 1px gray solid;
+  border: 2px rgb(255, 255, 255) solid;
   font-size: 13px;
   background: transparent;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   margin-top: 15px;
+  /* color: white; */
+  font-family: 'Arimo', sans-serif;
+  background-color: white;
 }
 
 .block-solo-btn:hover {
-  background: #202020;
+  background: #000000;
   color: white;
-  -webkit-box-shadow: grey 8px 5px 5px;
-          box-shadow: grey 8px 5px 5px;
+  -webkit-box-shadow: rgb(255, 255, 255) 8px 5px 5px;
+          box-shadow: rgb(255, 255, 255) 8px 5px 5px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -608,4 +619,12 @@ body {
 .menu-link {
   text-decoration: none;
   color: white;
+}
+
+
+.contact_h2 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 45px;
 }
