@@ -456,7 +456,7 @@ body {
 }
 
 .block-solo-btn {
-  padding: 13px 50px;
+  padding: 10px 50px;
   border-radius: 10px;
   border: 2px rgb(255, 255, 255) solid;
   font-size: 13px;
@@ -526,7 +526,7 @@ body {
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: center;
 }
 
 .links1 {
@@ -550,7 +550,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* background-color: red; */
+  flex-direction: column;
 }
+
 
 .links2 img {
   width: 30px;
@@ -573,7 +576,7 @@ body {
 .footer-name {
   font-size: 16px;
   text-align: center;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   font-family: 'Secular One', sans-serif;
   font-weight: 800px;
   color: white;
@@ -627,4 +630,9 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 45px;
+}
+
+.footer-img img{
+  margin-top: 30px;
+  width: 35px;
 }
